@@ -53,13 +53,14 @@ class ViewController: UIViewController {
     }
     var sw:Bool = false
     var end = "0"
-    var a[Int] = "0"
+    var a = "0"
     var ch = "0"
     @IBAction func show(_ sender: Any) {
         //sum.text = equal
         if ch == "+" {
             while(sw) {
                 end += "Int(ch!)!"
+                sum.text = end
             }
         }
         
