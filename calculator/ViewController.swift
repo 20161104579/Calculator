@@ -143,12 +143,12 @@ class ViewController: UIViewController {
         }
         if ch == "-" {
             if(sw) {
-                finish = "\(Double(end)! - Double(endd)!)"
+                finish = "\(Double(endd)! - Double(end)!)"
             }
         }
         if ch == "/" {
             if(sw) {
-                finish = "\(Double(end)! / Double(endd)!)"
+                finish = "\(Double(endd)! / Double(end)!)"
             }
         }
         if ch == "%" {
@@ -169,10 +169,8 @@ class ViewController: UIViewController {
         if sum.text == "0" {
             sum.text = "错误"
         }
-        else {
-            sum.text = finish
-            p = true
-        }
+        sum.text = finish
+        p = true
         
         end = "0"
         endd = "0"
